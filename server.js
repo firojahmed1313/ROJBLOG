@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true })); // post from data
 app.use(express.static(path.join(path.resolve(), "pubic"))); // add static file
 app.use(cookieParser())
 app.use(cors({
-  origin:"https://5173-mdfirojahmed30-rojblock-hg4t4aboodn.ws-us106.gitpod.io/register",
+  origin:"https://5173-mdfirojahmed30-rojblock-hg4t4aboodn.ws-us106.gitpod.io",
   methods:["GET" ,"POST" , "PUT" , "DELETE"],
   credentials:true,
   optionSuccessStatus:200
