@@ -23,7 +23,7 @@ router.post("/api/user/logIn", userLogin);
 router.get("/api/user/logOut", userLogout);
 
 router.get("/user/myProfile",isSignin, getMyProfile);
-router.get("/user/:id",isSignin, getuserByid );
+router.get("/user/:id", getuserByid );
 
 
 export default router;
