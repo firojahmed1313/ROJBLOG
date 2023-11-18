@@ -16,7 +16,7 @@ export const userRegister = async (req, res) => {
     email,
     password,
   });
-  createCookie(user, res, "User register successfull");
+  createCookie(req.body, res, "User register successfull");
 };
 
 export const userLogin = async (req, res) => {
