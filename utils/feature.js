@@ -4,6 +4,7 @@ import jwt from "jsonwebtoken";
 
 export const createCookie = (user , res , massage) => {
   const token = jwt.sign({ _id: user._id }, process.env.JWT_SCODE);
+  console.log(token)
   res
     .status(201)
     .cookie("token", token, {
