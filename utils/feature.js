@@ -15,5 +15,6 @@ export const createCookie = (user , res , massage) => {
       success:true,
       massage, 
       user,
+      token,
     });
 };
