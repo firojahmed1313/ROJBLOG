@@ -23,7 +23,7 @@ app.use(cookieParser())
 app.use(cors({
   origin: process.env.FRONTED_URL,
   methods:["GET" ,"POST" , "PUT" , "DELETE"],
-  credentials:true,
+  credentials: true,
   optionSuccessStatus:200
 }))
 
