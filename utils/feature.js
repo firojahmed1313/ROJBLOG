@@ -8,6 +8,8 @@ export const createCookie = (user , res , massage) => {
   res
     .status(201)
     .cookie("token", token, {
+      path: "/",
+      httpOnly: true,
       expires: new Date(Date.now() + 1000 * 60 * 50),
       //sameSite: process.env.NODE_MODE === "devlopment" ? "lax" : "none",
       //secure: process.env.NODE_MODE === "devlopment" ? false :true ,
